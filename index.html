@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
     <header>
         <div class = "logo">
             <!-- Icon -->
-            <img src="assets/logo.png" alt = "">
-
+            <!-- <img src="assets/logo.png" alt = ""> -->
         </div>
 
         <button class="nav-toggle" aria-label="toggle navigation">
@@ -21,11 +21,9 @@
         </button>
 
         <!-- Setup navigation view -->
-        <nav class  = "nav">
+        <nav class ="nav">
             <ul class = "nav__list">
-                
-                <li class = "nav__item">
-                    <a href="#home" class="nav__link">Home</a></li>
+                <li class = "nav__item"><a href="#home" class="nav__link">Home</a></li>
                 
                 <li class = "nav__item"><a href="#services" class="nav__link">My services</a></li>
                 
@@ -41,14 +39,12 @@
         <h1 class="section__title section__title--intro">
             Hi,I am <strong>Ler Yan En</strong>
         </h1>
-        <p class="section__subtitle section__subtitle--intro">
-            Student from School of Science and Technology Singapore(SST)
-        </p>
-        <img src="assets/profile.png" alt="Photo of me">
+        <p class="section__subtitle section__subtitle--intro">Software developer</p>
+        <img class = "intro__img" src="assets/profile.jpg" alt="Photo of me">
     
     </section>
 
-    <section class="my-services" id="services">
+    <section class="my-services parallax" id="services">
         <h2 class="section__title section__title--services">
             What I do
         </h2>
@@ -56,47 +52,45 @@
         <div class = "services">
             <div class = "service">
                 <h3>App developement</h3>
-                <p>
-                    I made mathx and mnay other apps
-                </p>
+                <p>I made mathx and mnay other apps</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
 
             <div class = "service">
-                <h3>Game developemnt</h3>
-                <p>
-                    I make games in unity in my free time
-                </p>
+                <h3>Game developement</h3>
+                <p>I make games in unity in my free time</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
 
             <div class = "service">
                 <h3>Python programming</h3>
-                <p>
-                    I invest time in oython programmign and competitive programming
-                </p>
+                <p>I invest time in oython programmign and competitive programming</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
 
         </div>
     <a href="#work" class = "btn">My work</a>
+
     </section>
 
     <section class="about-me" id = "about">
         <h2 class = "section__title section__title--about">Who am I?</h2>
-        <p class = "section_subtitle section__subtitle--about">
-        </p>
+        <p class = "section__subtitle section__subtitle--about">A computing student in sst inc</p>
         <div class = "about-me__body">
-            <p></p>
-            <p></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
-        <img src="assets/fullphoto.png" alt = "Me">
+        <img src="assets/fullphoto.jpeg" alt = "Me" class="about-me__img">
 
     </section>
 
-    <section class = "my-work">
-        <h2 class = "section__title">My work</h2>
-        <p class  = "section_subtitle"></p>
+    <section class = "my-work" id ="work">
+        <h2 class="section__title section__title--work">My work</h2>
+        <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+        
         <div class = "portfolio">
             <!--portfolio images-->
-            <a href="#" class = "portfolio__item">
+            <a href="portfolio.html" class = "portfolio__item">
                 <img src="portfolio-1.png" alt = "" class="portfolio__img">
             </a>
 
@@ -114,23 +108,34 @@
 
         </div>
     </section>
-    <footer>
+    <footer class ="footer">
+        <p>Ler Yan En</p>
+        <p>Student of School of Science and Technology Singapore</p>
         <ul class="social-list">
+            
             <li class="social-list__item">
-                <a class = "social-list__link"><a href="https://github.com">github</a>
-                
-            </li>
-            <li class="social-list__item">
-                <a class = "social-list__link"><a href="https://github.com">linkin still need to change link</a>
+                <a class="social-list__link" href="https://github.com">
+                    <i class="fab fa-hackerrank"></i>
+                </a>
             </li>
             
             <li class="social-list__item">
-                <a class = "social-list__link"><a href="https://github.com">hackerank still need to chnage link</a>
+                <a class="social-list__link" href="https://github.com">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com">
+                    <i class="fab fa-github"></i>
+                </a>
             </li>
             
         </ul>
 
     </footer>
+    
+    <script src="js/index.js"></script>
 
 </body>
 </html>
