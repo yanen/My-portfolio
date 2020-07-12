@@ -238,7 +238,14 @@ header {
 }
 
 .intro__img {
+
     box-shadow: var(--bs);
+    border-radius: 5.37%;
+}
+
+.mathx__img {
+    box-shadow: var(--bs);
+    border-radius: 22.37%;
 }
 
 .section__subtitle--intro {
@@ -262,8 +269,15 @@ header {
         min-width: 250px;
         position: relative;
         z-index: 2;
-    }    
-    
+    }
+
+    .mathx__img {
+        grid-area: img;
+        min-width: 250px;
+        position: relative;
+        z-index: 2;
+    }
+
     .section__subtitle--intro {
         align-self: start;
         grid-column: -1 / 1;
