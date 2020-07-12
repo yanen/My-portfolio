@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
@@ -11,6 +12,9 @@
     <title>Ler Yan En's portfolio</title>
 </head>
 <body>
+    <!-- Back to top button -->
+    <a id="up__button"></a>
+
     <header>
         <div class = "logo">
             <!-- Icon -->
@@ -26,7 +30,7 @@
             <ul class = "nav__list">
                 <li class = "nav__item"><a href="#home" class="nav__link">Home</a></li>
                 
-                <li class = "nav__item"><a href="#services" class="nav__link">My services</a></li>
+                <li class = "nav__item"><a href="#services" class="nav__link">Skills</a></li>
                 
                 <li class = "nav__item"><a href="#about" class="nav__link">About me</a></li>
                 
@@ -40,33 +44,58 @@
         <h1 class="section__title section__title--intro">
             Hi,I am <strong>Ler Yan En</strong>
         </h1>
-        <p class="section__subtitle section__subtitle--intro">Software developer</p>
+        <p class="section__subtitle section__subtitle--intro">Software Developer</p>
         <img class = "intro__img" src="assets/profile.jpg" alt="Photo of me">
     
     </section>
+    <section class="about-me" id = "about">
+        <h2 class = "section__title section__title--about">About me</h2>
+        <div class = "about-me__body">
+            <ul>
+                <li>A 15 year old currently studying in School of Science and Technology Singapore(SST).</li>
+                <li>Chief Technical Officer of Orion Inc, a startup in my school's ICT Talent Devlopment Programme.</li>
+                <li>Senior Goalkeeper of my school's Floorbal team.</li>
+                <li>2020 Class Vice Chairperson</li>
+                <li>Hobbies: Game developement and reading</li>
+              </ul>
+        </div>
+        <!--<img src="assets/fullphoto.jpeg" alt = "Me" class="about-me__img">-->
+
+    </section>
+
 
     <section class="my-services parallax" id="services">
         <h2 class="section__title section__title--services">
-            What I do
+            Skills
         </h2>
 
         <div class = "services">
             <div class = "service">
-                <h3>App developement</h3>
-                <p>I made mathx and mnay other apps</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <h3>Python</h3>
+                <h3>Programming</h3>
+                <p>As a student who is taking Computing for O levels this year, I am proficient in the Python programming language.</p>
+                <p>I have attained a  <a href="https://www.hackerrank.com/certificates/d348d1578036" target="_blank">Python (Basic) Certificate</a> on Hackerrank and have created a desktop application named <a href="portfolio/surveyscan.html" style="text-decoration:underline;" target="" >SurveyScan</a> using Python.</p>
+                <P>Furthermore, I have also created some Python Scripts to automate some mundane tasks.</P>
             </div>
 
             <div class = "service">
-                <h3>Game developement</h3>
-                <p>I make games in unity in my free time</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <h3>Mobile App Developement</h3>
+                <p>I am experienced in IOS and Andriod app development using Xcode and Andriod Studio.</p>
+                <p>Over the past three years in SST, I have worked on multiple IOS applications for my school like <a href="portfolio/mathx.html" style="text-decoration:underline;" >MathX</a> and <a href="portfolio/exerco.html" style="text-decoration:underline;" >Exerco</a>
+                    .</p>
+                <p>I also participated in an Andriod app development course held in SST, which gave me my foundation in Andriod App development</p>
             </div>
-
             <div class = "service">
-                <h3>Python programming</h3>
-                <p>I invest time in oython programmign and competitive programming</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <h3>Leadership and Organisation</h3>
+                <p>I have experience in organisational and leadership roles.</p>
+                <p>I have planned and executed multiple class events as the Class Vice-chairperson for this year.</p>
+                <p>In 2019, I was part of a committee in leading my classmates to organise activities for beneficiaries from the <a href="http://www.minds.org.sg/" style="text-decoration:underline;" target="_blank" >Movement of Intellectually Disabled Singapore (MINDS)</a>
+                    .</p>
+            </div>
+            <div class = "service">
+                <h3>Competitive Programming</h3>
+                <p>I am well versed in common programming algorithms and terms.</P>
+                <p>I attended an algorithmic thinking class in my school and have participated in computing competitions like the <a href="https://www.amt.edu.au/australian-informatics-olympiad" style="text-decoration:underline;" target="_blank" >Australian informatics Olympiad</a> and the <a href="https://thedrct.org/#!/home" style="text-decoration:underline;" target="_blank" >DrCT</a> International contest in computational thinking.</p>
             </div>
 
         </div>
@@ -74,25 +103,14 @@
 
     </section>
 
-    <section class="about-me" id = "about">
-        <h2 class = "section__title section__title--about">Who am I?</h2>
-        <p class = "section__subtitle section__subtitle--about">A computing student in sst inc</p>
-        <div class = "about-me__body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-        <img src="assets/fullphoto.jpeg" alt = "Me" class="about-me__img">
-
-    </section>
-
     <section class = "my-work" id ="work">
         <h2 class="section__title section__title--work">My projects</h2>
         <p class="section__subtitle section__subtitle--work">A selection of my works</p>
-        
         <div class = "portfolio">
             <!--portfolio images-->
             <a href="portfolio/mathx.html" class = "portfolio__item">
-                <img src="assets/MathXLogo.png" alt = "Mathx" class="portfolio__img">
+                <img src="assets/icons/icons.002.jpeg" alt = "Mathx" class="portfolio__img">
+                
             </a>
 
             <a href="portfolio/surveyscan.html" class = "portfolio__item">
@@ -100,15 +118,17 @@
             </a>
 
             <a href="portfolio/exerco.html" class = "portfolio__item">
-                <img src="assets/ExercoLogo.png" alt = "" class="portfolio__img">
+                <img src="assets/icons/icons.001.jpeg" alt = "" class="portfolio__img">
             </a>
-
+<!--
             <a href="#" class = "portfolio__item">
                 <img src="portfolio-4.png" alt = "" class="portfolio__img">
             </a>
-
+-->
         </div>
     </section>
+
+
     <footer class ="footer">
         <p>Ler Yan En</p>
         <p>Student of School of Science and Technology Singapore</p>
@@ -133,6 +153,7 @@
             </li>
             
         </ul>
+        <p>Best viewed in the desktop Chrome browser</p>
 
     </footer>
     

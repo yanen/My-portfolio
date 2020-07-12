@@ -9,9 +9,6 @@ html {
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
 }
-body {
-    overscroll-behavior-y: none;
-  }
 
 /* Global variables */
 :root {
@@ -90,11 +87,18 @@ h2,
 h3 {
     line-height: 1;
     margin: 0;
+    text-align: center;
 }
 
-h1 { font-size: var(--fs-h1) }
+h1 { 
+    font-size: var(--fs-h1);}
 h2 { font-size: var(--fs-h2) }
-h3 { font-size: var(--fs-h3) }
+
+h3 { 
+    font-size: var(--fs-h3);
+    text-align: center;
+}
+
 
 
 .section__title {
@@ -113,6 +117,12 @@ h3 { font-size: var(--fs-h3) }
     margin: 0;
     font-size: var(--fs-h3);
 }
+.special{
+    color: var(--clr-dark);
+    background-color: var(--clr-accent);
+    margin:0px; padding:0px;
+    font-size: var(--fs-h3);
+}
 
 .section__subtitle--intro,
 .section__subtitle--about {
@@ -120,8 +130,8 @@ h3 { font-size: var(--fs-h3) }
     padding: .24em 0.5em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
+    text-align: center;
 }
-
 
 /* header */
 
@@ -207,6 +217,7 @@ header {
 
 
 .hamburger {
+    outline:none;
     display: block;
     position: relative;
 }
@@ -224,6 +235,7 @@ header {
 
 .hamburger::before,
 .hamburger::after {
+    outline:none;
     content: '';
     position: absolute;
     left: 0;
@@ -240,7 +252,6 @@ header {
 }
 
 .intro__img {
-
     box-shadow: var(--bs);
     border-radius: 5.37%;
 }
@@ -301,6 +312,7 @@ header {
         left: -1.5em;
         width: calc(100% + 1.5em);
     }
+
 }
 
 .my-services{
@@ -329,6 +341,10 @@ header {
 .services {
     margin-bottom: 4em;
 }
+.service a{
+    color: White;
+
+}
 
 .service {
     max-width: 500px;
@@ -350,15 +366,19 @@ header {
 
 
 .about-me {
-    max-width: 1000px;
+    /*max-width: 1000px;*/
     margin: 0 auto;
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    
 }
 
 .about-me__img {
     box-shadow: var(--bs);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
+    /*
     .about-me {
         display: grid;
         grid-template-columns: 1fr 200px;
@@ -368,6 +388,8 @@ header {
             "text img";
         grid-column-gap: 2em;
     }
+    */
+
     
     .section__title--about {
         grid-area: title;
@@ -383,9 +405,7 @@ header {
         padding-right: calc(200px + 4em);
     }
     
-    .about-me__img {
-        grid-area: img;
-    }
+
 }
 .my-work {
     background-color: var(--clr-dark);
@@ -413,6 +433,7 @@ header {
 .portfolio__item:focus .port {
     transform: scale(1.2);
     opacity: .5;
+    outline:none
 }
 
 .footer{
@@ -482,4 +503,42 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+
+  #up__button {
+    display: inline-block;
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  #up__button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  #up__button:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #up__button:active {
+    background-color: #555;
+  }
+  #up__button.show {
+    opacity: 1;
+    visibility: visible;
   }
