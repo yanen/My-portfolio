@@ -1,4 +1,3 @@
-
 *,
 *::before,
 *::after {
@@ -10,6 +9,9 @@ html {
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
 }
+body {
+    overscroll-behavior-y: none;
+  }
 
 /* Global variables */
 :root {
@@ -247,6 +249,10 @@ header {
     box-shadow: var(--bs);
     border-radius: 22.37%;
 }
+.exerco__img {
+    box-shadow: var(--bs);
+    border-radius: 21.37%;
+}
 
 .section__subtitle--intro {
     display: inline-block;
@@ -270,6 +276,14 @@ header {
         position: relative;
         z-index: 2;
     }
+
+    .exerco_img {
+        grid-area: img;
+        min-width: 250px;
+        position: relative;
+        z-index: 2;
+    }
+
 
     .mathx__img {
         grid-area: img;
