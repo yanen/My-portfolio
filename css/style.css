@@ -364,19 +364,13 @@ header {
     }
 }
 
-
 .about-me {
     /*max-width: 1000px;*/
     margin: 0 auto;
-    background-color: var(--clr-dark);
+    background-color:gray;
     color: var(--clr-light);
     
 }
-
-.about-me__img {
-    box-shadow: var(--bs);
-}
-
 @media (min-width: 700px) {
     /*
     .about-me {
